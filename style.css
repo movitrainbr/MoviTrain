@@ -1375,6 +1375,7 @@ section::before{
 
   border-radius: 999px;
   white-space: nowrap;
+   background: red !important;
   }
   
 }
