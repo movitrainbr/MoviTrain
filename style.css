@@ -460,8 +460,14 @@ button{
 
 .hero-image{
   flex:1;
+
   display:flex;
-  justify-content:center;;
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+
+  perspective:1200px;
 }
 
 .phone-glow{
@@ -504,7 +510,7 @@ button{
 /* LIVE BADGE */
 
 .live-badge{
-        position:absolute;
+  position:absolute;
   right:250px;
   top:62%;
   transform:translateX(-15px);
@@ -526,7 +532,6 @@ button{
 
   box-shadow:0 10px 30px rgba(0,0,0,0.18);
   z-index:5;
-    
 }
 
 /* FLOATING NOTIFICATION */
@@ -1375,8 +1380,6 @@ section::before{
 }
 
 
-
-
   nav{
     position: fixed;
 
@@ -1433,9 +1436,14 @@ section::before{
     heroGlow 8s ease-in-out infinite alternate;
 }
 
+ .phone-mockup{
+    box-shadow:none !important;
+  }
+
+
 
 .phone-mockup::before{
-    content: '';
+    content: none !important;
 
     position: absolute;
 
@@ -1456,6 +1464,7 @@ section::before{
     z-index: -1;
 
     filter: blur(18px);
+    display: none !important;
 }
 
 .phone-mockup:hover{
@@ -1464,6 +1473,7 @@ section::before{
     rotateX(4deg)
     translateY(-8px);
 }
+
 
 
   .section-title h2{
@@ -1864,3 +1874,4 @@ section::before{
 
 
 }
+
