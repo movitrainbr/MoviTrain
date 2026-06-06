@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meu Perfil | MoviTrain</title>
+
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<main class="auth-page">
+
+<section class="auth-card">
+
+<h1>Meu Perfil</h1>
+
+<p>
+Complete seus dados para encontrar parceiros compatíveis.
+</p>
+
+<form id="profile-form">
+
+<input
+type="text"
+id="profile-name"
+placeholder="Seu nome"
+required
+>
+
+<input
+type="number"
+id="profile-age"
+placeholder="Sua idade"
+required
+>
+
+<input
+type="text"
+id="profile-city"
+placeholder="Sua cidade"
+required
+>
+
+<select id="profile-goal" required>
+
+<option value="">
+Objetivo de treino
+</option>
+
+<option value="Ganho de Massa">
+Ganho de Massa
+</option>
+
+<option value="Emagrecimento">
+Emagrecimento
+</option>
+
+<option value="Condicionamento">
+Condicionamento
+</option>
+
+<option value="Corrida">
+Corrida
+</option>
+
+<option value="Ciclismo">
+Ciclismo
+</option>
+
+<option value="Outro">
+Outro
+</option>
+
+</select>
+
+<select id="profile-level" required>
+
+<option value="">
+Nível de treino
+</option>
+
+<option value="Iniciante">
+Iniciante
+</option>
+
+<option value="Intermediário">
+Intermediário
+</option>
+
+<option value="Avançado">
+Avançado
+</option>
+
+<option value="Elite">
+Elite
+</option>
+
+</select>
+
+<button type="submit">
+
+Salvar Perfil
+
+</button>
+
+</form>
+
+<span id="profile-message"></span>
+
+<a href="parceiros.html">
+    Encontrar parceiros
+</a>
+
+</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

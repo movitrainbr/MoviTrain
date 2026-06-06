@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MoviTrain</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <main class="auth-page">
+
+        <section class="auth-card">
+
+            <h1>Entrar</h1>
+
+            <p>
+                Acesse sua conta MoviTrain.
+            </p>
+
+            <form id="login-form">
+
+                <input
+                    type="email"
+                    id="login-email"
+                    placeholder="Seu e-mail"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="login-password"
+                    placeholder="Sua senha"
+                    required
+                >
+
+                <button type="submit">
+                    Entrar
+                </button>
+
+            </form>
+
+            <span id="login-message"></span>
+
+            <a href="cadastro.html">
+                Criar uma conta
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
