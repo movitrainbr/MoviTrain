@@ -996,6 +996,7 @@ section::before{
     overflow: hidden;
 }
 
+
 .cta-content{
     position: relative;
 
@@ -1073,6 +1074,73 @@ section::before{
 .how-it-works{
   padding: 100px 0;
 }
+
+
+/* ==========================
+   WAITLIST
+========================== */
+
+.waitlist{
+    padding:120px 0;
+}
+
+.waitlist-content{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+    padding:60px 40px;
+
+    background:var(--bg-glass);
+    border:1px solid var(--border-glass);
+    border-radius:var(--radius-lg);
+    backdrop-filter:blur(14px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.25);
+}
+
+.waitlist-content span{
+    color:var(--accent);
+    letter-spacing:3px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.waitlist-content h2{
+    font-size:2.4rem;;
+    line-height:1.2;
+    margin:25px 0;
+}
+
+.waitlist-content p{
+    color:var(--text-secondary);
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.waitlist-form{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.waitlist-form input{
+    padding:16px 18px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,0.10);
+    background:rgba(255,255,255,0.05);
+    color:white;
+    outline:none;
+    font-family:inherit;
+    min-width:220px;
+}
+
+.waitlist-form input::placeholder{
+    color:rgba(255,255,255,0.5);
+}
+
 
 /*=========================================================
    REVEAL======================================================= */
@@ -1244,40 +1312,6 @@ section::before{
 
 
 
-
-/*=========================================================
- CURSOR GLOW
-========================================================== */
-
-.cursor-glow{
-   position: absolute;
-
-    width: 700px;
-    height: 700px;
-
-    top: 50%;
-    left: 50%;
-
-    transform:
-    translate(-50%, -50%);
-
-    background:
-    radial-gradient(
-        circle,
-        rgba(255,122,0,0.12),
-        transparent 70%
-    );
-
-    filter: blur(90px);
-
-    z-index: -1;
-
-    pointer-events: none;
-
-    animation:
-    heroGlow 8s ease-in-out infinite alternate;
-}
-
 /* =========================================================
    RESPONSIVE
 ========================================================= */
@@ -1307,7 +1341,13 @@ section::before{
 
   .hero-text{
     text-align:center;
+
   }
+
+.hero-text h1{
+   font-size: 2.5rem;
+   line-height: 1.1;
+}
 
   .hero-buttons{
     justify-content:center;
@@ -1315,12 +1355,26 @@ section::before{
   }
 
   .live-badge{
-    position:static;
-    transform:none;
-    margin:0 auto 20px;
-  }
+      position: static;
+  transform: none;
 
+  width: fit-content;
+  max-width: 90%;
+
+  margin: 20px auto 0;
+
+  padding: 8px 14px;
+
+  font-size: 12px;
+  line-height: 1;
+
+  border-radius: 999px;
+  white-space: nowrap;
+  }
+  
 }
+
+
 
 
   nav{
@@ -1415,6 +1469,25 @@ section::before{
   .section-title h2{
     font-size: 36px;
   }
+
+
+
+.waitlist-content{
+    padding:40px 24px;
+}
+
+.waitlist-content h2{
+    font-size:30px;
+}
+
+.waitlist-form{
+    flex-direction:column;
+}
+
+.waitlist-form input,
+.waitlist-form button{
+    width:100%;
+}
 
 
 
@@ -1699,6 +1772,7 @@ section::before{
 
 
 
+
     .section-header h2{
         font-size:2rem;
     }
@@ -1787,5 +1861,6 @@ section::before{
     to{
         width:100%;
     }
+
 
 }

@@ -34,8 +34,6 @@ window.addEventListener('scroll', () => {
 
 
 
-// CURSOR GLOW
-
 const glow = document.querySelector('.cursor-glow');
 
 if(glow){
